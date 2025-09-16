@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        <a-box
+            position="0 1 -5"
+            depth="2"
+            height="2"
+            width="2"
+            animation="
+                property: rotation;
+                from: 0 0 0;
+                to: 0 360 0;
+                dur: 2000;
+                easing: linear;
+                loop: true;
+            "
+            color="tomato">
+        </a-box>
+        
+        <a-box color="red" height="4" width="4"a
+            position="-2 2 -10">
+        </a-box>
+        
+        <a-box color="black" height="1" width="1" depth="1"
+            position="4 -2 -7"
+            animation="
+                property: position;
+                from: 4 -2 -7;
+                to: 4 5 -7;
+                dir: alternate;
+                loop: true;
+            "
+        </a-box>
+            
+            
+            <a-box color="blue" height="2" width="1" depth="4"
+                position="0 6 -5">
+    
+            <a-sphere position="-1 0 -5" radius="0.5" color="blue" 
+        </a-scene>
+    </body>
+</html>
